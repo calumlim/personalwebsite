@@ -33,7 +33,7 @@
   width: auto;
   margin-left: 450px;
   margin-right: auto;
-  margin-top: 360px;
+  margin-top: 362px;
   color: white;
 }
 
@@ -42,6 +42,9 @@
   border: none;
   outline: none;
   font-size: 100px;
-  color: white;
-
+  color: transparent;
+  text-shadow: 0 0 0 #ffffff;
+  &:focus {
+    outline: none;
+  }
 }
