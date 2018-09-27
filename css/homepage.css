@@ -1,0 +1,47 @@
+#navbar navbar-expand-md bg-dark navbar-dark {
+  background-color: red;
+}
+
+#welcomeVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: 2;
+}
+#navigationBar {
+  z-index: 1;
+}
+
+.welcomeText {
+  font-size: 30px;
+  z-index: 3;
+  position: fixed;
+  width: auto;
+  margin-left: 50px;
+  margin-right: auto;
+  margin-top: 390px;
+  color: white;
+}
+
+.enterName {
+  font-size: 30px;
+  z-index: 3;
+  position: fixed;
+  width: auto;
+  margin-left: 450px;
+  margin-right: auto;
+  margin-top: 360px;
+  color: white;
+}
+
+#nameBox {
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 100px;
+  color: white;
+
+}
