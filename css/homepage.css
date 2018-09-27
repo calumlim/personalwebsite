@@ -1,23 +1,24 @@
 #welcomeVideo {
   position: fixed;
   right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
+  top: 0;
+  max-width: 100%;
+  height: auto;
   object-fit: cover;
   z-index: 2;
 }
 #navigationBar {
   z-index: 1;
+  visibility: hidden;
 }
 
 .welcomeText {
   font-size: 30px;
   z-index: 3;
   position: fixed;
-  width: auto;
+  max-width: 100%;
+  height: auto;
   margin-left: 50px;
-  margin-right: auto;
   margin-top: 390px;
   color: white;
 }
