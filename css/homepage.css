@@ -48,3 +48,24 @@
     outline: none;
   }
 }
+
+#flaticonFooter {
+  z-index: 3;
+  position: absolute;
+  bottom: 0;
+  width: 50%;
+  height: 21px;
+  margin-left: 50px;
+  background: transparent;
+  color: rgb(159, 159, 159);
+}
+
+a:link, a:visited {
+  color: rgb(159, 159, 159);
+  text-decoration: none;
+}
+
+a:hover, a:active {
+  color: rgb(185, 185, 185);
+  text-decoration: none;
+}

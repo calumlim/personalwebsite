@@ -6,22 +6,24 @@
     <link href="css/master.css" rel="stylesheet" type="text/css" />
     <link href="css/homepage.css" rel="stylesheet" type="text/css" />
     <title>Calum Lim</title>
+    <link rel="icon" type="image/png" href="graphic/titlelogo.png">
   </head>
   <body>
+    <!--Welcome Screen-->
     <!--Welcome Video-->
     <video id="welcomeVideo" autoplay muted loop>
       <source src="video/newyorkcitybnw.mp4" type="video/mp4">
     </video>
-    <div class="welcomeText">
+    <div class="welcomeText" id="welcomeText">
       <h1>welcome</h1>
       <p>please enter your name: </p>
     </div>
-    <div class="enterName">
+    <div class="enterName" id="enterName">
       <input type="text" name="userName" id="nameBox" spellcheck="false" maxlength="30" size="30" autofocus><br>
     </div>
     <!--Navigation Bar-->
     <nav class="navbar navbar-expand-md bg-darkgreen navbar-dark" id="navigationBar">
-      <a class="navbar-brand" href="index.html">Calum Lim Sheng En</a>
+      <a class="navbar-brand" href="index.html" onclick="resetWelcomePage()">Calum Lim Sheng En</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -35,6 +37,12 @@
       </div>
     </nav>
 
+    <!--Footer-->
+    <div id="flaticonFooter">
+      Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+    </div>
 
+    <script type="text/javascript" src="script/welcomepage.js"></script>
   </body>
+
 </html>
