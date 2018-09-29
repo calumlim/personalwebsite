@@ -1,0 +1,47 @@
+html,body {
+  height: 100%;
+  width: 100%;
+}
+.slide-left-to-right {
+  position: absolute;
+  left: -50%;
+  -webkit-animation: slideright 1s forwards;
+  -webkit-animation-delay: 0.15s;
+  animation: slideright 1s forwards;
+  animation-delay: 0.15s;
+}
+.slide-right-to-left {
+  position: absolute;
+  left: 100%;
+  -webkit-animation: slideleft 1s forwards;
+  -webkit-animation-delay: 0.15s;
+  animation: slideleft 1s forwards;
+  animation-delay: 0.15s;
+}
+@-webkit-keyframes slideleft {
+  100% { left: 50%; }
+}
+
+@keyframes slideleft {
+  100% { left: 50%; }
+}
+
+@-webkit-keyframes slideright {
+  100% { left: 0%; }
+}
+
+@keyframes slideright {
+  100% { left: 0%; }
+}
+
+#leftMenuSVG {
+  min-width: 50%;
+  height: 100%;
+  background-color: rgb(17, 17, 17);
+}
+
+#rightMenuSVG {
+  min-width: 50%;
+  height: 100%;
+  background-color: rgb(219, 219, 219);
+}
