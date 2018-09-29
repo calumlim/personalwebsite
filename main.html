@@ -7,12 +7,23 @@
     <link href="css/mainpagestyle.css" rel="stylesheet" type="text/css" />
     <link href="css/master.css" rel="stylesheet" type="text/css" />
     <link rel="icon" type="image/png" href="graphic/titlelogo.png">
+    <script type="text/javascript" src="script/mainpagescript.js"></script>
   </head>
 
 
   <body class="bg-secondary">
-    <svg class="slide-left-to-right" id="leftMenuSVG"></svg>
-
-    <svg class="slide-right-to-left" id="rightMenuSVG"></svg>
+    <svg class="slide-left-to-right-100" id="leftMenuSVG"></svg>
+      <div class="slide-left-to-right-100" id="welcomeTitle">
+        <p>C A L U M</p>
+        <ul id="menuOptions" onmouseover="showRightSide()">
+          <li id="menuIntro">INTRODUCTION</li>
+          <li id="menuExperiences">EXPERIENCES</li>
+          <li id="menuPortfolio">PORTFOLIO</li>
+          <li id="menuContact">CONTACT</li>
+          <li id="menuCredit">CREDIT</li>
+        </ul>
+      </div>
+    <svg class="slide-right-to-left-50" id="rightMenuSVG">
+    </svg>
   </body>
 </html>
