@@ -7,6 +7,7 @@
   object-fit: cover;
   z-index: 2;
 }
+
 #navigationBar {
   z-index: 1;
   visibility: hidden;
@@ -21,6 +22,9 @@
   margin-left: 50px;
   height: 55%;
   color: white;
+}
+#welcomeTextSmall {
+  visibility: hidden;
 }
 
 .enterName {
@@ -42,6 +46,7 @@
   color: transparent;
   text-shadow: 0 0 0 #ffffff;
   min-width: 100%;
+  resize: none;
   &:focus {
     outline: none;
   }
@@ -76,4 +81,52 @@ a:link, a:visited {
 a:hover, a:active {
   color: rgb(185, 185, 185);
   text-decoration: none;
+}
+
+@media (max-width: 580px) {
+  .welcomeText {
+    font-size: 20px;
+    height: 90%;
+    text-align: center;
+    min-width: 100%;
+    margin-left: auto;
+  }
+  .enterName {
+    height: 70%;
+    text-align: center;
+    min-width: 100%;
+    margin-left: auto;
+  }
+  #nameBox {
+    font-size: 60px;
+    text-align: center;
+    width: 50%;
+  }
+}
+
+@media (max-height: 405px) {
+  .enterName{
+    height: auto;
+    padding-top: 300px;
+  }
+  #nameBox {
+    font-size: 30px;
+  }
+}
+
+@media (max-height: 250px) and (max-width: 580px){
+  #welcomeText {
+    visibility: hidden;
+  }
+  #welcomeTextSmall {
+    visibility: visible;
+    font-weight: bold;
+  }
+  #skipButton {
+    right: 0;
+    min-width: 43%;
+  }
+  .enterName {
+    visibility: hidden;
+  }
 }

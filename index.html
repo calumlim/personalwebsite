@@ -14,12 +14,17 @@
     <video id="welcomeVideo" autoplay muted loop>
       <source src="video/newyorkcitybnw.mp4" type="video/mp4">
     </video>
+    <div class="welcomeText" id="welcomeTextSmall">
+      <p>welcome!</p>
+      <p>(you have a very small screen :o)</p>
+    </div>
     <div class="welcomeText" id="welcomeText">
       <h1>welcome</h1>
       <p>please enter your name: </p>
     </div>
     <div class="enterName" id="enterName">
-      <input type="text" name="userName" id="nameBox" spellcheck="false" maxlength="20" size="20" autofocus><br>
+      <textarea name="userName" rows="3" cols="20" id="nameBox" spellcheck="false" maxlength="30" autofocus></textarea>
+      <!--<input type="text" name="userName" id="nameBox" spellcheck="false" maxlength="20" size="20" autofocus><br>-->
     </div>
     <div class="skipButton" id="skipButton" onclick="skipWelcomePage()">
       skip   <img src="graphic/skipbutton.png" alt="skip" height="20px" width="20px">
@@ -41,11 +46,11 @@
     </nav>
     <p id="welcomeMessageIntro"></p>
 
-    <!--Footer-->
+    <!--Footer
     <div id="flaticonFooter">
       Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
     </div>
-
+  -->
     <script type="text/javascript" src="script/welcomepage.js"></script>
   </body>
 
