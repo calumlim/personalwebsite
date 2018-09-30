@@ -30,8 +30,7 @@ function shrinkLeftMenu() {
   changeText("menuContact", "contact");
   changeText("menuCredit", "credit");
 
-  menuTabs.style.minWidth = "10%";
-  //menuTabs.style.fontSize = "70px";
+  //menuTabs.style.minWidth = "10%";
 }
 
 function changeText(e,i) {
@@ -41,6 +40,20 @@ function changeText(e,i) {
 }
 
 function glowSelectedText(e){
-  element = document.getElementById(e)
-  element.style.color = white;
+  const listItems = document.querySelectorAll('#menuOptions li');
+
+  for (let i = 0; i < listItems.length; i++) {
+    listItems[i].style.color = "rgb(31, 31, 31)";
+    if (listItems[i]!==e){
+      listItems[i].onmouseover = function() {
+        listItems[i].style.color = "white";
+      }
+      listItems[i].onmouseout = function() {
+        listItems[i].style.color = "rgb(31, 31, 31)";
+      }
+    }
+  }
+  e.style.color = "white";
+  e.onmouseover = null;
+  e.onmouseout = null;
 }

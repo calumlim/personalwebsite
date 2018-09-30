@@ -46,11 +46,11 @@ html,body {
   animation-delay: 0.15s;
 }
 @-webkit-keyframes slideleft {
-  100% { left: 50%; }
+  100% { left: 20%; }
 }
 
 @keyframes slideleft {
-  100% { left: 50%; }
+  100% { left: 20%; }
 }
 
 @keyframes slideleft-hover {
@@ -62,7 +62,7 @@ html,body {
 }
 
 @keyframes shrink-leftmenu {
-  100% { left: -6%; }
+  100% { left: -4%; }
 }
 #leftMenuSVG {
   z-index: 1;
@@ -81,20 +81,20 @@ html,body {
 #welcomeTitle {
   position: absolute;
   z-index: 1;
-  font-size: 72px;
+  font-size: 60px;
   font-family: menuFont, sans-serif;
   font-weight: bold;
   color: white;
   bottom: 0;
   margin-left: 130px;
-  min-height: 95%;
+  min-height: 90%;
   text-align: left;
 }
 
 #menuOptions {
   z-index: 1;
   color: rgb(31, 31, 31);
-  font-size: 50px;
+  font-size: 40px;
   list-style: none;
   margin-top: 100px;
   margin-left: -40px;
@@ -135,10 +135,11 @@ li:hover {
 
 
 /*Smaller Screen*/
-@media (max-width: 1300px) {
+@media (max-width: 1500px) {
   #welcomeTitle {
     font-size: 50px;
     min-height: 90%;
+    margin-left: 100px;
   }
 
   #menuOptions {
