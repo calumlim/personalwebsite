@@ -31,11 +31,16 @@ function shrinkLeftMenu() {
   changeText("menuCredit", "credit");
 
   menuTabs.style.minWidth = "10%";
-  menuTabs.style.fontSize = "70px";
+  //menuTabs.style.fontSize = "70px";
 }
 
 function changeText(e,i) {
   element = document.getElementById(e)
   element.innerHTML = i;
   element.style.animation = "fadein 1s";
+}
+
+function glowSelectedText(e){
+  element = document.getElementById(e)
+  element.style.color = white;
 }

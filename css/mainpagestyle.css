@@ -128,3 +128,20 @@ li:hover {
 		transform: translateY(-5px);
 	}
 }
+
+
+
+
+
+
+/*Smaller Screen*/
+@media (max-width: 1300px) {
+  #welcomeTitle {
+    font-size: 50px;
+    min-height: 90%;
+  }
+
+  #menuOptions {
+    font-size: 30px;
+  }
+}
