@@ -30,7 +30,6 @@ function shrinkLeftMenu() {
   changeText("menuContact", "contact");
   changeText("menuCredit", "credit");
 
-  //menuTabs.style.minWidth = "10%";
 }
 
 function changeText(e,i) {
