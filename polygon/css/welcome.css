@@ -1,86 +1,62 @@
-body {
+html, body {
   height: 100%;
-  width: 100%;
-  background-color: #17212b;
+  min-width: 100%;
+  margin: 0 0 0 0;
+  background-color: #10171f;
 }
-@font-face {
-  font-family: Bitter;
-  src: url('https://fonts.googleapis.com/css?family=Bitter');
+.fadein {
+  animation: fadein 6s;
+}
+
+#container {
+  position: absolute;
+  top: 40%;
+  left: 43%;
 }
 #name {
-  margin-top: -40px;
-  margin-left: -10px;
-  top: 0;
-  text-align: center;
-  font-family: Bitter;
+  left: 0;
+  font-family: 'Bitter', 'serif';
   font-size: 50px;
   color: #ecf0f1;
 }
 
-#tophalf {
-  margin-top: 10%;
-  position: static;
+#surname {
+  left: 0;
+  font-size: 20px;
+  margin-top: -40px;
+  font-family: 'Bitter', 'serif';
+  text-align: center;
+  color: rgb(212, 212, 212);
 }
-#bottomhalf {
-  position: static;
+
+#leftbar {
+  position: fixed;
+  left: 0;
+  width: 30px;
+  min-height: 100%;
+  margin-top: -30px;
+  background-color: #c0392b;
 }
-#topleft-triangle {
-  position: absolute;
-  margin-left: 35.5%;
-  width: 0;
-  height: 0;
-  border-bottom: 200px solid #c0392b;
-  border-left: 170px solid transparent;
-}
-#topleft-triangle:hover {
-  border-bottom: 200px solid #792219;;
-}
-#topright-triangle {
-  position: absolute;
+
+#rightbar {
+  position: fixed;
   right: 0;
-  margin-right: 37.35%;
-  width: 0;
-  height: 0;
-  border-bottom: 200px solid #f39c12;
-  border-right: 170px solid transparent;
+  width: 30px;
+  min-height: 100%;
+  margin-top: -30px;
+  background-color: #16a085;
 }
 
-#topright-triangle:hover {
-  border-bottom: 200px solid #ab6e0d;
+#bottombar {
+  position: fixed;
+  bottom: 0;
+  height: 30px;
+  min-width: 100%;
+  background-color: #f39c12;
 }
 
-#bottomleft-triangle {
-  margin-top: 15.65%;
-  margin-left: 35.5%;
-  position: absolute;
-  width: 0;
-  height: 0;
-  border-top: 200px solid #27ae60;
-  border-left: 170px solid transparent;
-}
 
-#bottomleft-triangle:hover {
-  border-top: 200px solid #1a7440;
-}
-
-#bottomright-triangle {
-  right: 0;
-  margin-top: 15.65%;
-  margin-right: 37.35%;
-  position: absolute;
-  width: 0;
-  height: 0;
-  border-top: 200px solid #2980b9;
-  border-right: 170px solid transparent;
-}
-
-#bottomright-triangle:hover {
-  border-top: 200px solid #1c587e;
-}
-.slide {
-  display: block;
-  position: absolute;
-  height: 200px !important;
-  width: 200px !important;
-  background: red;
+@keyframes fadein {
+  0%  { opacity: 0; }
+  100% { opacity: 1; }
 }
